@@ -2,8 +2,8 @@
 %html
   %head
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
-      %title= content_for?(:title) ? yield(:title) : "#Hack4Good es una hackathon que se desarrolla simultáneamente en más de 20 ciudades en todo el mundo. Su objetivo es unir a desarrolladores, diseñadores, programadores y emprendedores en la búsqueda de soluciones para diversas problemáticas sociales"
-      %meta{:content => content_for?(:description) ? yield(:description) : "Hack4good Santiago", :name => "description"}
+      %title= content_for?(:title) ? yield(:title) : "¡#Hack4Good en Santiago!"
+      %meta{:content => content_for?(:description) ? yield(:description) : "#Hack4Good es una hackathon que se desarrolla simultáneamente en más de 20 ciudades en todo el mundo. Su objetivo es unir a desarrolladores, diseñadores, programadores y emprendedores en la búsqueda de soluciones para diversas problemáticas sociales", :name => "description"}
         = stylesheet_link_tag "application", :media => "all"
         = csrf_meta_tags
         = yield(:head)
