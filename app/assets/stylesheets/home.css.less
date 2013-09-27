@@ -36,10 +36,13 @@
   margin: 0px;
 }
 
+.content {
+  padding: 50px 150px 50px 150px;
+}
+
 #content {
   margin-top: 20px;
   background-color: rgba(0,0,0,.5);
-  padding: 50px 150px 50px 150px;
   h1, h2 {
     color: white;
   }
@@ -48,7 +51,6 @@
 #content-2 {
   background-color: @gray-lighter;
   color: @brand-primary;
-  padding: 50px 150px 50px 150px;
   h2 {
     font-weight: bold;
   }
@@ -57,10 +59,24 @@
 #content-3 {
   background: rgba(66,139,202,.7);
   color: white;
-  padding: 50px 150px 50px 150px;
 }
 
 #content-4 {
   background-color: @gray-lighter;
-  padding: 50px 150px 50px 150px;
+}
+
+@media (max-width: @grid-float-breakpoint) {
+  .navbar-content {
+    display: none;
+  }
+
+  .content {
+    padding: 50px !important;
+  }
+
+  #content-4 {
+    img {
+      margin-bottom: 20px;
+    }
+  }
 }

@@ -1,0 +1,24 @@
+- @layout_title = '#Hack4Good en Santiago, Chile.' 
+- @layout_description = '#Hack4Good es una hackathon que se desarrolla simultáneamente en más de 20 ciudades en todo el mundo. Su objetivo es unir a desarrolladores, diseñadores, programadores y emprendedores en la búsqueda de soluciones para diversas problemáticas sociales.'
+- @layout_keywords = '#hack4goods, santiago hackaton, hackaton en santiago, ayuda a la humanidad'
+- @layout_image = asset_url('background.jpg')
+- @layout_url = 'http://hack4good-santiago.herokuapp.com/'
+
+%title= @layout_title
+
+= csrf_meta_tags
+
+%meta{name: "viewport", content: "width=device-width, initial-scale=1.0"}
+%meta{name: "description", content: @layout_description, scale: 1.0}
+%meta{name: "keywords", content: @layout_keywords}
+
+%meta{name: "og:title", content: @layout_title}
+%meta{name: "og:description", content: @layout_description}
+%meta{name: "og:image", content: @layout_image}
+%meta{name: "og:url", content: @layout_url}
+
+%meta{name: "twitter:card", content: "summary"}
+%meta{name: "twitter:url", content: @layout_url}
+%meta{name: "twitter:title", content: @layout_title}
+%meta{name: "twitter:description", content: @layout_description}
+%meta{name: "twitter:image", content: @layout_image}
