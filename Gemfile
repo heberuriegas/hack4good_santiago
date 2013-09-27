@@ -26,6 +26,9 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'thin'
 end
+group :development, :production do
+  gem 'newrelic_rpm'
+end
 group :production do
   gem 'unicorn'
   gem 'rails_12factor'

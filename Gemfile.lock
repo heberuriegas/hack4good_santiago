@@ -95,6 +95,7 @@ GEM
     mime-types (1.25)
     minitest (4.7.5)
     multi_json (1.8.0)
+    newrelic_rpm (3.6.7.159)
     pg (0.17.0)
     polyglot (0.3.3)
     quiet_assets (1.0.2)
@@ -191,6 +192,7 @@ DEPENDENCIES
   jquery-rails
   less-rails
   less-rails-bootstrap
+  newrelic_rpm
   pg
   quiet_assets
   rails (= 4.0.0)
