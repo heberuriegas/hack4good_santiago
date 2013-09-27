@@ -9,7 +9,9 @@
         = csrf_meta_tags
         = yield(:head)
   %body{:class => "#{controller_name} #{action_name}"}
-    #container.container
+    #container.container-fluid
+      #bg
+        = image_tag 'background.jpg'
       %header
         = render 'layouts/navigation'
         = render 'layouts/messages'

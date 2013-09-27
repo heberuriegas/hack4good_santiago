@@ -1,1 +1,17 @@
-= link_to "Hack4good Santiago", root_path, :class => 'brand'
+%nav.navbar.navbar-default.navbar-fixed-top{role: "navigation"}
+  .container
+    .navbar-header
+      %button.navbar-toggle{"data-target" => ".navbar-ex1-collapse", "data-toggle" => "collapse", type: "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.navbar-brand{href: 'https://hack4good02-santiago.eventbrite.com/'} #HACK4GOOD - Santiago
+    .collapse.navbar-collapse.navba-rex1-collapse
+      %ul.nav.navbar-nav.pull-right
+        %li
+          = link_to 'https://www.facebook.com/groups/572527976143496/', class: 'social-icon', target: '_blank' do
+            = image_tag 'facebook-icon.jpg', alt: 'Facebook'
+        %li
+          = link_to 'https://twitter.com/search?q=%23hack4good', class: 'social-icon', target: '_blank' do
+            = image_tag 'twitter-icon.jpg', alt: 'Twitter'
